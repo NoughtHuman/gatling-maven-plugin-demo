@@ -9,7 +9,6 @@ class BasicSimulation extends Simulation {
 	val httpProtocol = http
 		.baseUrl("https://www.ampion.com.au")
 		.inferHtmlResources(BlackList(""".*\.js""", """.*\.css""", """.*\.gif""", """.*\.jpeg""", """.*\.jpg""", """.*\.ico""", """.*\.woff""", """.*\.woff2""", """.*\.(t|o)tf""", """.*\.png""", """.*detectportal\.firefox\.com.*"""), WhiteList())
-		.inferHtmlResources()
 		.acceptHeader("image/webp,*/*")
 		.acceptLanguageHeader("en-US,en;q=0.5")
 		.doNotTrackHeader("1")
